@@ -1,26 +1,35 @@
-For Powershell: 
+# Windows Setup for Windows 11/10
 
-Set-ExecutionPolicy Bypass
+## For Powershell: 
 
-Setting Up Chocolatey:
+Set the execution policy to allow running powershell scripts:
 
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+`Set-ExecutionPolicy Bypass`
 
-Restart Powershell
+## Setting Up Chocolatey:
 
-Choco Installs:
+`Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
 
-choco install firefox chromium slack vscode webstorm git gitkraken audacity vlc obs todoist steam 7zip dropbox raidrive bitwarden github-desktop mailspring windirstat nodejs 
-Chris Titus Windows Utility:
+Restart Powershell for changes to take effect.
 
-git clone https://github.com/ChrisTitusTech/winutil.git
+## Choco Installs:
 
-    Launch Command:
+These are the applications to install using chocolatey
 
-        iwr -useb https://christitus.com/win | iex
+`choco install firefox chromium slack vscode webstorm git gitkraken audacity vlc obs todoist steam 7zip dropbox raidrive bitwarden github-desktop mailspring windirstat nodejs`
 
-Updating Packages in Chocolatey:
+## Chris Titus Windows Utility:
+
+Chris Titus has a wonderful utility to help us configure and control windows settings. With it we can set windows update settings, install software using **winget** and remove unnecessary preinstalled apps.
+
+`git clone https://github.com/ChrisTitusTech/winutil.git`
+
+Launch Command:
+
+`iwr -useb https://christitus.com/win | iex`
+
+## Updating Packages in Chocolatey:
 
 You can update all packages in Chocolatey using: 
 
-    choco upgrade all -y
+`choco upgrade all -y`
