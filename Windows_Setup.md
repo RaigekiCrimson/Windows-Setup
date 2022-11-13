@@ -34,11 +34,3 @@ You can update all packages in Chocolatey using:
 
 `choco upgrade all -y`
 
-## Install Bootstrap Studio
-
-Download Link 
-
-[Bootstrap Studio](http://www.bootstrapstudio.io/download/)
-
-Product Key in Bitwarden
-
