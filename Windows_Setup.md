@@ -16,7 +16,7 @@ Restart Powershell for changes to take effect.
 
 These are the applications to install using chocolatey
 
-`choco install firefox chromium slack vscode webstorm git gitkraken audacity vlc obs todoist steam 7zip dropbox yarn bitwarden github-desktop windirstat nodejs`
+`choco install firefox chromium slack vscode webstorm git gitkraken audacity vlc obs todoist steam 7zip dropbox bitwarden github-desktop windirstat nodejs yarn`
 
 ## Chris Titus Windows Utility:
 
